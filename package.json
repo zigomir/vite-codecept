@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "test": "codeceptjs run",
     "build": "vite build"
   },
   "dependencies": {
@@ -11,6 +12,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.1",
     "@vue/compiler-sfc": "^3.0.5",
+    "codeceptjs": "3.0.4",
+    "playwright": "^1",
     "vite": "^2.0.0-beta.44"
   }
 }
