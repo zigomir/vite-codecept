@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@latest
+      - uses: actions/setup-node@latest
+        with:
+          node-version: "15.x"
+      - run: yarn
+      - run: yarn test
